@@ -4,9 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
+    <title>Accordion</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/stylefaq.css">
 </head>
 <body>
-    
+    <nav class="navbar navbar-light" style="background-color: #5C87FE;">
+        <button>home</button>
+      </nav>
+    <section>
+        <div class="judul">
+            <h2>FREQUENTLY ASKED QUESTIONS</h2>
+        </div>
+        <div class="container">
+            <div class="accordion">
+                <div class="accordion-item" id="pertanyaan1">
+                    <a class= "accordion-link" href="#pertanyaan1">
+                        Bisakah saya membeli buku secara langsung ?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="jawaban">
+                        <p>
+                            Tentu bisa. Kamu bisa langsung datang ke toko kami, yang berada di 
+                        jalan lemak nomor 3, Bandung.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="pertanyaan2">
+                    <a class= "accordion-link" href="#pertanyaan2">
+                        Bagaimana saya mendapatkan informasi tentang promo menarik ?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="jawaban">
+                        <p>
+                            Kami akan menginformasikan promo-promo menarik melalui akun email
+                        yang kamu daftarkan. Jadi, sering-sering cek email ya !.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="pertanyaan3">
+                    <a class= "accordion-link" href="#pertanyaan3">
+                        Ketika saya membeli buku secara online dan ternyata terdapat kecacatan
+                        pada buku tersebut, bisakah saya mengajukan return ?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="jawaban">
+                        <p>
+                            Tentu bisa. Kamu bisa langsung menginformasikan kecacatan buku tersebut
+                        maksimal 3 hari setelah pembelian. Jika melewati batas waktu, maka buku
+                        tersebut tidak dapat direturn.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
