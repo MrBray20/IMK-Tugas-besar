@@ -52,7 +52,6 @@
     hsla(0, 0%, 100%, 0.15),
     hsla(0, 0%, 100%, 0)
   );
-  --mdb-body-font-family: var(--mdb-font-roboto);
   --mdb-body-font-size: 1rem;
   --mdb-body-font-weight: 400;
   --mdb-body-line-height: 1.6;
@@ -71,7 +70,6 @@
 }
 body {
   margin: 0;
-  font-family: var(--mdb-body-font-family);
   font-size: var(--mdb-body-font-size);
   font-weight: var(--mdb-body-font-weight);
   line-height: var(--mdb-body-line-height);
@@ -241,7 +239,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: var(--mdb-font-monospace);
+  
   font-size: 1em; /*!rtl:ignore*/
   direction: ltr;
   unicode-bidi: bidi-override;
@@ -5397,7 +5395,6 @@ fieldset:disabled .btn {
   z-index: 1080;
   display: block;
   max-width: 276px;
-  font-family: var(--mdb-font-roboto);
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -5873,7 +5870,7 @@ fieldset:disabled .btn {
   z-index: 1090;
   display: block;
   margin: 0;
-  font-family: var(--mdb-font-roboto);
+  
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -7148,9 +7145,7 @@ fieldset:disabled .btn {
 .ps-5 {
   padding-left: 3rem !important;
 }
-.font-monospace {
-  font-family: var(--mdb-font-monospace) !important;
-}
+
 .fs-1 {
   font-size: calc(1.375rem + 1.5vw) !important;
 }
@@ -10770,7 +10765,7 @@ fieldset:disabled .btn {
   --mdb-font-roboto: "Roboto", sans-serif;
 }
 body {
-  font-family: var(--mdb-font-roboto);
+  
   line-height: 1.6;
   color: #4f4f4f;
 }
