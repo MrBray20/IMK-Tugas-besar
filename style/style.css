@@ -50,3 +50,11 @@ table {
 img{
 	float: left;
 }
+
+.bg-image{
+	max-width: max-content;
+}
+
+.card-body{
+	width : max-content;
+}

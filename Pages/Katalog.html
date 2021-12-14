@@ -4,9 +4,329 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katalog</title>
+    <link rel="stylesheet" href="../lib/font-awesome.min.css">
+	<link rel="stylesheet" href="../lib/font-awesome.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../lib/mdb.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="../js/mdb.min.js"></script>
+    <script src="../js/scrip.js"></script>
+    <title>Home</title>
 </head>
 <body>
+    <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #1975FF;">
+        <div class="container-fluid">
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarRightAlignExample"
+                aria-controls="navbarRightAlignExample"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+        <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-5">
+                <li class="nav-item">
+                    <a class="nav-link mx-4" aria-current="page" href="#" style="color: white;">About</a>
+                </li>
+                <li class="nav-item grid-manual">
+                    <a class="nav-link" href="#" style="color: white;">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Jumbotron -->
+    <div class="p-5 text-center bg-light" style="color: black;">
+        <h1 class="mb-3"><b>JohnStore</b></h1>
+        <h4 class="mb-3">Online payment for book shopping</h4>
+        <a class="btn btn-primary" href="" role="button">Explore All</a>
+    </div>
+    <!-- Jumbotron -->
+    </header>
+
+    <!-- Nama 
+    <div class="mx-5" style="padding-left: 400px; color: black;">
+        <h2><b>JohnStore</b></h2>
+    </div> -->
     
+
+    <div class="input-group d-flex justify-content-center" style="margin-top: 20px; margin-bottom: 20px;">
+        <div class="form-outline"  style="width: 500px;">
+            <input id="search-focus" type="search" id="form1" class="form-control" />
+            <label class="form-label" for="form1">Search</label>
+        </div>
+        <button type="button" class="btn btn-primary">
+            <i class="fa fa-search"></i>
+        </button>
+    </div>
+
+    <!-- Breadcrumb -->
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active mx-5" aria-current="page" style="color: black;">Home</li>
+        </ol>
+    </nav>
+    <hr size="3px" style="margin-left: 49px; margin-right: 49px;">
+    
+    <!-- Body Content -->
+
+    <main class="my-5">
+        <div class="container">
+          <!--Section: Content
+          <section class="text-center">
+            <h4 class="mb-5"><strong>Latest posts</strong></h4>-->
+    
+            <div class="row">
+
+                <div class="col-lg-2 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="../Img/cover1.jpg" class="img-fluid card-img-top">
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body text-center">
+                        <h5 class="card-title">The Hobbit</h5>
+                            <p class="card-text">
+                            $20.00
+                            </p>
+                            <a href="#!" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="../Img/cover2.jpg" class="img-fluid card-img-top">
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body text-center">
+                        <h5 class="card-title">Hujan</h5>
+                            <p class="card-text">
+                            $20.00
+                            </p>
+                            <a href="#!" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="../Img/cover3.jpg" class="img-fluid">
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body text-center">
+                        <h5 class="card-title">Dinner for Two</h5>
+                            <p class="card-text">
+                            $20.00
+                            </p>
+                            <a href="#!" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="../Img/cover1.jpg" class="img-fluid" width="auto">
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body text-center">
+                        <h5 class="card-title">The Hobbit</h5>
+                            <p class="card-text">
+                            $20.00
+                            </p>
+                            <a href="#!" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="../Img/cover1.jpg" class="img-fluid" width="auto">
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body text-center">
+                        <h5 class="card-title">The Hobbit</h5>
+                            <p class="card-text">
+                            $20.00
+                            </p>
+                            <a href="#!" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="../Img/cover1.jpg" class="img-fluid" width="auto">
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body text-center">
+                        <h5 class="card-title">The Hobbit</h5>
+                            <p class="card-text">
+                            $20.00
+                            </p>
+                            <a href="#!" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="../Img/cover1.jpg" class="img-fluid" width="auto">
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body text-center">
+                        <h5 class="card-title">The Hobbit</h5>
+                            <p class="card-text">
+                            $20.00
+                            </p>
+                            <a href="#!" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="../Img/cover1.jpg" class="img-fluid" width="auto">
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body text-center">
+                        <h5 class="card-title">The Hobbit</h5>
+                            <p class="card-text">
+                            $20.00
+                            </p>
+                            <a href="#!" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="../Img/cover1.jpg" class="img-fluid" width="auto">
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body text-center">
+                        <h5 class="card-title">The Hobbit</h5>
+                            <p class="card-text">
+                            $20.00
+                            </p>
+                            <a href="#!" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="../Img/cover1.jpg" class="img-fluid" width="auto">
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body text-center">
+                        <h5 class="card-title">The Hobbit</h5>
+                            <p class="card-text">
+                            $20.00
+                            </p>
+                            <a href="#!" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="../Img/cover1.jpg" class="img-fluid" width="auto">
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body text-center">
+                        <h5 class="card-title">The Hobbit</h5>
+                            <p class="card-text">
+                            $20.00
+                            </p>
+                            <a href="#!" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="../Img/cover1.jpg" class="img-fluid" width="auto">
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body text-center">
+                        <h5 class="card-title">The Hobbit</h5>
+                            <p class="card-text">
+                            $20.00
+                            </p>
+                            <a href="#!" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            
+            
+              
+        </div>
+      </main>
+
+    <!-- Pagination -->
+
+    <nav aria-label="..." class="d-flex justify-content-center" style="margin-top: 20px; margin-bottom: 120px;">
+        <ul class="pagination" style="position: absolute;">
+            <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item" aria-current="page">
+                <a class="page-link" href="#">2 <span class="visually-hidden">(current)</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+
 </body>
 </html>
