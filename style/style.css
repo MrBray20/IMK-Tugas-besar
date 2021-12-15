@@ -58,3 +58,8 @@ img{
 .card-body{
 	width : max-content;
 }
+
+.carticon{
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+}
