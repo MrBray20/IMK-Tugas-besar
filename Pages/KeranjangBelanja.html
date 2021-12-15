@@ -4,51 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../lib/font-awesome.min.css">
-	<link rel="stylesheet" href="../lib/font-awesome.css">
+  	<link rel="stylesheet" href="../lib/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../lib/mdb.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="shortcut icon" href="../Img/iconweb.png">
     <script src="../js/mdb.min.js"></script>
-    <script src="../js/scrip.js"></script>
+    <script src="../js/script.js"></script>
+
+    <title>KeranjangBelanja</title>
 </head>
 <body>
-    <!-- navbar -->
-    <section>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!-- Container wrapper -->
-            <div class="container">
-                
-                <!-- Toggle button -->
-                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample"
-                    aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #1975FF;">
+      <div class="container-fluid">
+      <button
+              class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarRightAlignExample"
+              aria-controls="navbarRightAlignExample"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+      >
+      <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-5">
+              <li class="nav-item">
+                  <a class="nav-link mx-4" aria-current="page" href="#" style="color: white;">About</a>
+              </li>
+              <li class="nav-item grid-manual">
+                  <a class="nav-link" href="#" style="color: white;">FAQ</a>
+              </li>
+          </ul>
+      </div>
+      </div>
+  </nav>
+  <!-- Navbar -->
+      <div class="john">
+            <h5>JohnStore<b></b></h5>
+      </div>
+      <div class="cari input-group">
+        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+        aria-describedby="search-addon" />
+        <button type="button" class="btn btn-outline-primary">search</button>
+      </div>
 
-                <!-- Collapsible wrapper -->
-                <div class="collapse navbar-collapse" id="navbarButtonsExample">       
+      <nav aria-label="breadcrumb">
+        <ul class="chart breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Chart</li>
+        </ul>
+      </nav>
+      <hr class="my-4">
 
-                    <div class="d-flex align-items-center">
-                        <button type="button" class="btn btn-link px-3 me-2">
-                            Login
-                        </button>
-                        <button type="button" class="btn btn-primary me-3">
-                            Sign up for free
-                        </button>
-                        <a class="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"><i
-                                class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <!-- Collapsible wrapper -->
-            </div>
-            <!-- Container wrapper -->
-        </nav>
-    </section>
-
-
+      <table class="table table-borderless">
+        <thead class="keranjang">
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+      </table>
+      
+</body>
 </html>
