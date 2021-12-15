@@ -15,33 +15,35 @@
     <title>KeranjangBelanja</title>
 </head>
 <body>
+  <header>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg" style="background-color: #1975FF;">
-      <div class="container-fluid">
-      <button
-              class="navbar-toggler"
-              type="button"
-              data-mdb-toggle="collapse"
-              data-mdb-target="#navbarRightAlignExample"
-              aria-controls="navbarRightAlignExample"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-      >
-      <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarRightAlignExample">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-5">
-              <li class="nav-item">
-                  <a class="nav-link mx-4" aria-current="page" href="#" style="color: white;">About</a>
-              </li>
-              <li class="nav-item grid-manual">
-                  <a class="nav-link" href="#" style="color: white;">FAQ</a>
-              </li>
-          </ul>
-      </div>
-      </div>
-  </nav>
-  <!-- Navbar -->
+        <div class="container-fluid">
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarRightAlignExample"
+                aria-controls="navbarRightAlignExample"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+        <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-5">
+                <li class="nav-item">
+                    <a class="nav-link mx-4" aria-current="page" href="#" style="color: white;">Home</a>
+                </li>
+                <li class="nav-item grid-manual">
+                    <a class="nav-link" href="#" style="color: white;">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+    </header>
       <div class="john">
             <h5><b>JohnStore</b></h5>
       </div>
@@ -58,17 +60,65 @@
         </ul>
       </nav>
       <hr class="my-4">
-
-      <table class="table table-borderless">
-        <thead class="keranjang">
-          <tr>
-            <th scope="col">Product</th>
-            <th scope="col">Price</th>
-            <th scope="col">Quantity</th>
-            <th scope="col">Total</th>
-          </tr>
-        </thead>
-      </table>
       
+      <div class="container-fluid">
+        <div class="row">
+            <aside class="col-lg-9">
+                <div class="cart card">
+                    <div class="table table-borderless">
+                        <table class="table table-borderless table-shopping-cart">
+                            <thead class="text-muted">
+                                <tr class="small text-uppercase">
+                                    <th scope="col">Product</th>
+                                    <th scope="col" width="120">Quantity</th>
+                                    <th scope="col" width="120">Price</th>
+                                    <th scope="col" class="text-right d-none d-md-block" width="200"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <figure class="itemside align-items-center">
+                                            <div class="aside"><img src="../Img/cover1.jpg" class="img-sm"></div>
+                                            <figcaption class="info"> <a href="#" class="title text-dark" data-abc="true">The Hobit</a>
+                                                <p class="text-muted small">Writter: J.R.R TOLKIEN</p>
+                                            </figcaption>
+                                        </figure>
+                                    </td>
+                                    <td> <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select> </td>
+                                    <td>
+                                        <div class="price-wrap"> <var class="price">$20.00</var></div>
+                                    </td>
+                                    <td class="text-right d-none d-md-block"><a href="" class="btn btn-light" data-abc="true"> Remove</a> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </aside>
+            <aside class="col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <dl class="dlist-align">
+                            <dt>Total price: </dt>
+                            <dd class="text-right ml-3">$20.00</dd>
+                        </dl>
+                        <dl class="dlist-align">
+                            <dt>Discount:</dt>
+                            <dd class="text-right text-danger ml-3">- $00.00</dd>
+                        </dl>
+                        <dl class="dlist-align">
+                            <dt>Total:</dt>
+                            <dd class="text-right text-dark b ml-3"><strong>$20.00</strong></dd>
+                        </dl>
+                        <hr> <a href="#" class="btn btn-out btn-primary btn-square btn-main" data-abc="true"> Make Purchase </a> <a href="#" class="btn btn-out btn-success btn-square btn-main mt-2" data-abc="true">Continue Shopping</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
 </body>
 </html>
