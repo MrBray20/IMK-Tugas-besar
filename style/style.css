@@ -50,3 +50,30 @@ table {
 img{
 	float: left;
 }
+
+.john{
+	margin-top: 50px;
+	margin-left: 100px;
+	
+}
+.cari{
+	margin-left: 300px;
+	margin-top: -40px;
+	width: 600px !important;
+}
+.chart{
+	margin-left: 100px;
+	margin-top: 20px;
+	font-size: 13px;
+}
+.my-4{
+	width: 900px;
+	margin-left: 100px;
+}
+.keranjang{
+	background-color: white;
+}
+.table{
+	margin-left: 80px;
+	box-sizing: inherit;
+}
