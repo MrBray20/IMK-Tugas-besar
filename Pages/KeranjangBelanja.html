@@ -18,37 +18,66 @@
 </head>
 <body>
     <!-- navbar -->
-    <section>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!-- Container wrapper -->
-            <div class="container">
-                
-                <!-- Toggle button -->
-                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample"
-                    aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
+    <nav class="navbar navbar-expand-lg" style="background-color: #1975FF;">
+        <div class="container-fluid">
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarRightAlignExample"
+                aria-controls="navbarRightAlignExample"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+        <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-5">
+                <li class="nav-item">
+                    <a class="nav-link mx-4" aria-current="page" href="#" style="color: white;">About</a>
+                </li>
+                <li class="nav-item grid-manual">
+                    <a class="nav-link" href="#" style="color: white;">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
 
-                <!-- Collapsible wrapper -->
-                <div class="collapse navbar-collapse" id="navbarButtonsExample">       
+    <!-- Jumbotron -->
+    <div class="p-5 text-center" style="color: black;">
+        <h1 class="mb-3"><b>JohnStore</b></h1>
+        <h4 class="mb-3">Online payment for book shopping</h4>
+        <a class="btn btn-primary" href="" role="button">Explore All</a>
+    </div>
+    <!-- Jumbotron -->
+    </header>
 
-                    <div class="d-flex align-items-center">
-                        <button type="button" class="btn btn-link px-3 me-2">
-                            Login
-                        </button>
-                        <button type="button" class="btn btn-primary me-3">
-                            Sign up for free
-                        </button>
-                        <a class="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"><i
-                                class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <!-- Collapsible wrapper -->
-            </div>
-            <!-- Container wrapper -->
-        </nav>
-    </section>
+    <!-- Nama 
+    <div class="mx-5" style="padding-left: 400px; color: black;">
+        <h2><b>JohnStore</b></h2>
+    </div> -->
+    
+
+    <div class="input-group d-flex justify-content-center" style="margin-top: 20px; margin-bottom: 20px;">
+        <div class="form-outline"  style="width: 500px;">
+            <input id="search-focus" type="search" id="form1" class="form-control" />
+            <label class="form-label" for="form1">Search</label>
+        </div>
+        <button type="button" class="btn btn-primary">
+            <i class="fa fa-search"></i>
+        </button>
+    </div>
+
+    <!-- Breadcrumb -->
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item">Library</></li>
+        </ol>
+    </nav>
 
 
 </html>
