@@ -189,3 +189,7 @@ a {
 .btn-apply {
     font-size: 11px
 }
+
+.card-body{
+	width: max-content;
+}
