@@ -26,3 +26,7 @@ img{
     width: 50px;
     margin-left: 20px;
 }
+
+.btr{
+	border-bottom: 1px solid rgb(185, 185, 185);
+}
