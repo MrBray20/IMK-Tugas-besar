@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style/stylecart.css">
+    <link rel="stylesheet" href="../lib/mdb.min.css">
+    <script src="../js/mdb.min.js"></script>
+    <script src="../js/script.js"></script>
+
+    <title>KeranjangBelanja</title>
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg" style="background-color: #1975FF;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <img src="../Img/iconweb.png" class="logo" alt="">
+            <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-5">
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" aria-current="page" href="Katalog.html" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item grid-manual">
+                        <a class="nav-link" href="FAQ.html" style="color: white;">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+    </header>
+    <div class="p-5 text-center" style="color: black;">
+        <h1 class="mb-3"><b>JohnStore</b></h1>
+        <h4 class="mb-3">Online payment for book shopping</h4>
+    </div>
+
+    <nav aria-label="breadcrumb">
+        <ul class="chart breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Cart</li>
+        </ul>
+    </nav>
+    <hr class="my-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-11 mx-auto">
+                <div class="row mt-5 gx-3">
+                    <!-- left side div -->
+                    <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
+                        <div class="">
+                            <img src="../Img/empty-cart-2130356-1800917.png" class="kosong" alt="">
+                            
+                        </div>
+                        <div class="sorry">
+                            <h5>Sorry...Your cart is empty</h5>
+                        </div>
+                       
+                    </div>
+                    <!-- right side div -->
+                    <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+                        <div class="right_side p-3 shadow bg-white">
+                            <h2 class="product_name mb-5">Total Cart</h2>
+                            <div class="price_indiv d-flex justify-content-between">
+                                <p>Total Product</p>
+                                <p>$<span id="product_total_amt">0.00</span></p>
+                            </div>
+                            <div class="price_indiv d-flex justify-content-between">
+                                <p>Shipping Charge</p>
+                                <p>$<span id="shipping_charge">00.0</span></p>
+                            </div>
+                            <hr />
+                            <div class="total-amt d-flex justify-content-between font-weight-bold">
+                                <p>Total Price</p>
+                                <p>$<span id="total_cart_amt">0.00</span></p>
+                            </div>
+                            <a href="../Pages/Katalog.html" class="btn btn-primary text-uppercase" style="background-color: #FF6F00;"">Continue Shopping</a>
+                        </div>
+                        <!-- discount code part -->
+                        
+
+
+
+
+                        <!-- discount code ends -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../style/stylecart.css">
+    <link rel="stylesheet" href="../lib/mdb.min.css">
+    <script src="../js/mdb.min.js"></script>
+    <script src="../js/script.js"></script>
+
+    <title>KeranjangBelanja</title>
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg" style="background-color: #1975FF;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <img src="../Img/iconweb.png" class="logo" alt="">
+            <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-5">
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" aria-current="page" href="Katalog.html" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item grid-manual">
+                        <a class="nav-link" href="FAQ.html" style="color: white;">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+    </header>
+    <div class="p-5 text-center" style="color: black;">
+        <h1 class="mb-3"><b>JohnStore</b></h1>
+        <h4 class="mb-3">Online payment for book shopping</h4>
+    </div>
+
+    <nav aria-label="breadcrumb">
+        <ul class="chart breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Cart</li>
+        </ul>
+    </nav>
+    <hr class="my-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-11 mx-auto">
+                <div class="row mt-5 gx-3">
+                    <!-- left side div -->
+                    <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
+                        <div class="card p-4">
+                            
+                            <div class="row">
+                                <!-- cart images div -->
+                                <div
+                                    class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img" style="width: auto;">
+                                    <img src="../Img/cover1.jpg" class="img-fluid" alt="cart img">
+                                </div>
+
+
+
+
+                                <!-- cart product details -->
+                                <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                                    <div class="row">
+                                        <!-- product name  -->
+                                        <div class="col-6 card-title">
+                                            <h1 class="mb-4 product_name">The Hobbit</h1>
+                                            <p class="mb-2">Writter : J.R.R TOLKIEN</p>
+                                            <p class="mb-2" style="font-size: 12px;">ISBN: 978-0-8020-9086-7</p>
+                                            
+                                        </div>
+                                        <!-- quantity inc dec -->
+                                        <div class="col-6">
+                                            <ul class="pagination justify-content-end set_quantity">
+                                                <li class="page-item">
+                                                    <button class="page-link "
+                                                        onclick="decreaseNumber('textbox','itemval')">
+                                                        <i class="fas fa-minus"></i> </button>
+                                                </li>
+                                                <li class="page-item"><input type="text" name="" class="page-link"
+                                                        value="0" id="textbox">
+                                                </li>
+                                                <li class="page-item">
+                                                    <button class="page-link"
+                                                        onclick="increaseNumber('textbox','itemval')"> <i
+                                                            class="fas fa-plus"></i></button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- //remover move and price -->
+                                    <div class="row">
+                                        <div class="col-8 d-flex justify-content-between remove_wish">
+                                            <a href="../Pages/cartkosong.html" class="btn btn-primary text-uppercase" style="background-color: #FF6F00;">Remove</a>
+                                        </div>
+                                        <div class="col-4 d-flex justify-content-end price_money">
+                                            <h3>$<span id="itemval">0.00 </span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <!-- right side div -->
+                    <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+                        <div class="right_side p-3 shadow bg-white">
+                            <h2 class="product_name mb-5">Total Cart</h2>
+                            <div class="price_indiv d-flex justify-content-between">
+                                <p>Total Product</p>
+                                <p>$<span id="product_total_amt">0.00</span></p>
+                            </div>
+                            <div class="price_indiv d-flex justify-content-between">
+                                <p>Shipping Charge</p>
+                                <p>$<span id="shipping_charge">5.0</span></p>
+                            </div>
+                            <hr />
+                            <div class="total-amt d-flex justify-content-between font-weight-bold">
+                                <p>Total Price</p>
+                                <p>$<span id="total_cart_amt">0.00</span></p>
+                            </div>
+                            <button class="btn btn-primary text-uppercase">Checkout</button>
+                        </div>
+                        <!-- discount code part -->
+                        <div class="discount_code mt-3 shadow">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a class="d-flex justify-content-between" data-toggle="collapse"
+                                        href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                        Add a discount code (optional)
+                                        <span><i class="fas fa-chevron-down pt-1"></i></span>
+                                    </a>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="mt-3">
+                                            <input type="text" name="" id="discount_code1"
+                                                class="form-control font-weight-bold"
+                                                placeholder="Enter the discount code">
+                                            <small id="error_trw" class="text-dark mt-3"></small>
+                                        </div>
+                                        <button class="btn btn-primary btn-sm mt-3"
+                                            onclick="discount_code()">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- discount code ends -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        var product_total_amt = document.getElementById('product_total_amt');
+        var shipping_charge = document.getElementById('shipping_charge');
+        var total_cart_amt = document.getElementById('total_cart_amt');
+        var discountCode = document.getElementById('discount_code1');
+        const decreaseNumber = (incdec, itemprice) => {
+            var itemval = document.getElementById(incdec);
+            var itemprice = document.getElementById(itemprice);
+            console.log(itemprice.innerHTML);
+            // console.log(itemval.value);
+            if (itemval.value <= 0) {
+                itemval.value = 0;
+                alert('Negative quantity');
+            } else {
+                itemval.value = parseInt(itemval.value) - 1;
+                itemval.style.background = '#fff';
+                itemval.style.color = '#000';
+                itemprice.innerHTML = parseInt(itemprice.innerHTML) - 20;
+                product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) - 20;
+                total_cart_amt.innerHTML = parseInt(product_total_amt.innerHTML) + parseInt(shipping_charge.innerHTML) - 5;
+            }
+        }
+        const increaseNumber = (incdec, itemprice) => {
+            var itemval = document.getElementById(incdec);
+            var itemprice = document.getElementById(itemprice);
+            // console.log(itemval.value);
+            if (itemval.value >= 5) {
+                itemval.value = 5;
+                alert('Max 5');
+                itemval.style.background = 'red';
+                itemval.style.color = '#fff';
+            } else {
+                itemval.value = parseInt(itemval.value) + 1;
+                itemprice.innerHTML = parseInt(itemprice.innerHTML) + 20;
+                product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) + 20;
+                total_cart_amt.innerHTML = parseInt(product_total_amt.innerHTML) + parseInt(shipping_charge.innerHTML);
+            }
+        }
+
+
+        const discount_code = () => {
+            let totalamtcurr = parseInt(total_cart_amt.innerHTML);
+            let error_trw = document.getElementById('error_trw');
+            if (discountCode.value === 'TUBESIMK') {
+                let newtotalamt = totalamtcurr - 15;
+                total_cart_amt.innerHTML = newtotalamt;
+                error_trw.innerHTML = "Your code is valid";
+            } else {
+                error_trw.innerHTML = "Try Again!";
+            }
+        }
+    </script>
+</body>
+
+</html>
