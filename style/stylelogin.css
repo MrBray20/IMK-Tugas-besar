@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'montserrat';
+	src: url(../font/Montserrat-Medium.ttf);
+}
+body{
+	font-family: 'montserrat';
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.card-body{
+    width: max-content;
+}
+
+.carticon{
+    color: #000000;
+}
+
+img{
+    float: left;
+}
+
+.logo{
+    width: 50px;
+    margin-left: 20px;
+}
