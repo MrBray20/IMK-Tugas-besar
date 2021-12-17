@@ -13,6 +13,32 @@
     <link rel="shortcut icon" href="../Img/iconweb.png">
     <script src="../js/mdb.min.js"></script>
     <script src="../js/scrip.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function () {
+            setInterval(function () {
+                var hours = new Date().getHours();
+                $(".hours").html((hours < 10 ? "0" : "") + hours);
+            }, 1000);
+            setInterval(function () {
+                var minutes = new Date().getMinutes();
+                $(".min").html((minutes < 10 ? "0" : "") + minutes);
+            }, 1000);
+            setInterval(function () {
+                var seconds = new Date().getSeconds();
+                $(".sec").html((seconds < 10 ? "0" : "") + seconds);
+            }, 1000);
+        });
+    </script>
     <title>Home</title>
 </head>
 <body>
@@ -31,7 +57,7 @@
         >
         <i class="fas fa-bars"></i>
         </button>
-        <img src="../Img/iconweb.png" class="logo" alt="">
+        <img src="../Img/iconweb2.png" class="logo" alt="">
         <div class="collapse navbar-collapse" id="navbarRightAlignExample">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-5">
                 <li class="nav-item">
@@ -44,41 +70,35 @@
         </div>
         </div>
     </nav>
-    <!-- Navbar -->
 
     <!-- Jumbotron -->
+
     <div class="p-5 text-center" style="color: black;">
-        <h1 class="mb-3"><b>JohnStore</b></h1>
+        <h1 class="mb-3"><b>Welcome!</b></h1>
         <h4 class="mb-3">Online payment for book shopping</h4>
         <a class="btn btn-primary" href="#breadcrumb" role="button">Explore All</a>
     </div>
-    <!-- Jumbotron -->
     </header>
 
-    <!-- Nama 
-    <div class="mx-5" style="padding-left: 400px; color: black;">
-        <h2><b>JohnStore</b></h2>
-    </div> -->
-    
-
-    <div class="input-group d-flex justify-content-center" style="margin-top: 20px; margin-bottom: 20px;">
-        <div class="form-outline btr"  style="width: 500px;">
-            <input id="search-focus " type="search" id="form1" class="form-control" />
-            <label class="form-label " for="form1">Search</label>
-        </div>
-        <button type="button" class="btn btn-primary">
-            <i class="fa fa-search"></i>
-        </button>
-        
-    <!-- Cart shortcut-->
-
-        <div class="cartshortcut">
-            <ul>
-                <li><a href="../Pages/KeranjangBelanja.html" class="carticon"><i class="fas fa-shopping-cart"></i> Cart</a></li>
-            </ul>
+    <!-- Search Bar-->
+    <div class="searchbar">
+        <div class="input-group justify-content-center" style="margin-top: 20px; margin-bottom: 20px; position: relative;">
+            <div class="form-outline btr" style="width: 500px;">
+                <input id="search-focus" type="search" id="form1" class="form-control">
+                <label class="form-label" for="form1">Search</label>
+            </div>
+            <button type="button" class="btn btn-primary">
+                <i class="fa fa-search"></i>
+            </button>
         </div>
     </div>
-
+    
+    <!-- Cart shortcut-->
+    <div class="carticon">
+        <ul>
+            <li><a href="../Pages/KeranjangBelanja.html" class="carticon" style="max-width: max-content;"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+        </ul>
+    </div>
 
     <!-- Breadcrumb -->
 
@@ -88,26 +108,106 @@
         </ol>
     </nav>
     <hr size="3px" style="margin-left: 49px; margin-right: 49px;">
+
+    <!-- Clock -->
+
+    <div class="clock fixed-bottom justify-content-end">
+        <div class="d-flex flex-wrap justify-content-around">
+            <div class="card bg-primary text-white">
+                <h3 class="card-title text-center">
+                    <div class="d-flex flex-wrap justify-content-center mt-2">
+                        <a><span class="badge hours"></span></a> :
+                        <a><span class="badge min"></span></a> :
+                        <a><span class="badge sec"></span></a>
+                    </div>
+                </h3>
+            </div>
+        </div>
+    </div>
     
+
+    <!-- Sidebar Filter-->
+    <p style="margin-left: 68px; position: relative; color: black;">Filter</p>
+    <div class="dropdown" style="position: absolute;">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Rating
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">by name</a>
+            <a class="dropdown-item" href="#">by writer</a>
+        </div>
+    </div>
+
     <!-- Body Content -->
 
     <main class="my-5">
         <div class="container">
-          <!--Section: Content
-          <section class="text-center">
-            <h4 class="mb-5"><strong>Latest posts</strong></h4>-->
             <div class="row">
 
                 <div class="col-lg-2 col-md-12 mb-4">
                     <div class="card">
                         <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                            <img src="../Img/cover1.jpg" class="img-fluid card-img-top">
-                            <a href="#!">
-                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                            </a>
+                            <img src="../Img/cover1.jpg" class="img-fluid card-img-top" type="button" 
+                            class="btn btn-primary" 
+                            data-toggle="modal" 
+                            data-target="#exampleModal">
+                
+                        <!--Bootstrap modal -->
+                        <div class="modal fade" 
+                            id="exampleModal"
+                            tabindex="-1" 
+                            role="dialog"
+                            aria-labelledby="exampleModalLabel" 
+                            aria-hidden="true">
+                            <div class="modal-dialog" 
+                                role="document">
+                                <div class="modal-content">
+                                    <!-- Modal heading -->
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" 
+                                            id="exampleModalLabel" style="color: black;">
+                                        Detail
+                                    </h5>
+                                        <button type="button" 
+                                                class="close"
+                                                data-dismiss="modal" 
+                                                aria-label="Close">
+                                            <span aria-hidden="true">
+                                            ×
+                                        </span>
+                                        </button>
+                                    </div>
+                
+                                    <!-- Modal body with image -->
+                                    <div class="modal-body">
+                                        <img src="../Img/cover1.jpg" width="100px" style="margin-top: 10px;">
+                                        <p style="margin-left: 110px; color: black; font-size: 1.5rem;">Title: The Hobbit</p>
+                                        <p style="margin-left: 110px; color: black; font-size: 1rem; margin-top: -12px;">Writer: J.R.R. Tolkien</p>
+                                        <p style="margin-left: 110px; color: black; font-size: 1rem; margin-top: -12px;">ISBN: 978-0-8020-9086-7</p>
+                                        <p style="margin-left: 110px; color: black; margin-top: -12px;">Rating: </p>
+                                        <div class="rating">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                        </div>
+                                        
+                                        <p style="margin-left: 110px; color: black; font-size: 1rem;">Synopsis</p>
+                                        <p style="margin-left: 110px; color: black; font-size: 0.8rem; margin-top: -10px;">
+                                            Bilbo Baggins lives a quiet, peaceful life in his comfortable hole at Bag End. Bilbo lives in a hole because he is a 
+                                            hobbit—one of a race of small, plump people about half the size of humans, with furry toes and a great love of good food and drink.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         </div>
                         <div class="card-body" style="color: black;">
                         <h5 class="card-title">The Hobbit</h5>
+                            <p class="card-text">
+                            J.R.R Tolkien
                             <p class="card-text">
                             $20.00
                             </p>
@@ -127,6 +227,8 @@
                         <div class="card-body" style="color: black;"> 
                         <h5 class="card-title">Hujan</h5>
                             <p class="card-text">
+                            Tere Liye
+                            <p class="card-text">
                             $20.00
                             </p>
                             <a href="#!" class="btn btn-primary">Add to cart</a>
@@ -144,6 +246,8 @@
                         </div>
                         <div class="card-body" style="color: black;">
                         <h5 class="card-title">Dinner for Two</h5>
+                            <p class="card-text">
+                            Drea Stein
                             <p class="card-text">
                             $20.00
                             </p>
@@ -163,6 +267,8 @@
                         <div class="card-body" style="color: black;">
                         <h5 class="card-title">Sugar Run</h5>
                             <p class="card-text">
+                            Mesha Maren
+                            <p class="card-text">
                             $20.00
                             </p>
                             <a href="#!" class="btn btn-primary">Add to cart</a>
@@ -180,6 +286,8 @@
                         </div>
                         <div class="card-body" style="color: black;">
                         <h5 class="card-title">Very Nice</h5>
+                            <p class="card-text">
+                            Marey Dermansky
                             <p class="card-text">
                             $20.00
                             </p>
@@ -199,6 +307,8 @@
                         <div class="card-body" style="color: black;">
                         <h5 class="card-title">Pulang</h5>
                             <p class="card-text">
+                            Tere Liye
+                            <p class="card-text">
                             $20.00
                             </p>
                             <a href="#!" class="btn btn-primary">Add to cart</a>
@@ -216,6 +326,8 @@
                         </div>
                         <div class="card-body" style="color: black;">
                         <h5 class="card-title">The Ninth Life</h5>
+                            <p class="card-text">
+                            Taylor B. Barton
                             <p class="card-text">
                             $20.00
                             </p>
@@ -235,6 +347,8 @@
                         <div class="card-body" style="color: black;">
                         <h5 class="card-title">Abra Cadabra</h5>
                             <p class="card-text">
+                            Geean MR
+                            <p class="card-text">
                             $20.00
                             </p>
                             <a href="#!" class="btn btn-primary">Add to cart</a>
@@ -252,6 +366,8 @@
                         </div>
                         <div class="card-body" style="color: black;">
                         <h5 class="card-title">Pumpkin Heads</h5>
+                            <p class="card-text">
+                            Faith Erin Hicks
                             <p class="card-text">
                             $20.00
                             </p>
@@ -271,6 +387,8 @@
                         <div class="card-body" style="color: black;">
                         <h5 class="card-title">Komet Minor</h5>
                             <p class="card-text">
+                            Tere Liye
+                            <p class="card-text">
                             $20.00
                             </p>
                             <a href="#!" class="btn btn-primary">Add to cart</a>
@@ -289,6 +407,8 @@
                         <div class="card-body" style="color: black;">
                         <h5 class="card-title">Nebula</h5>
                             <p class="card-text">
+                            Tere Liye
+                            <p class="card-text">
                             $20.00
                             </p>
                             <a href="#!" class="btn btn-primary">Add to cart</a>
@@ -306,6 +426,8 @@
                         </div>
                         <div class="card-body" style="color: black;">
                         <h5 class="card-title">Dilan 1991</h5>
+                            <p class="card-text">
+                            Pidi Baiq
                             <p class="card-text">
                             $20.00
                             </p>
@@ -333,6 +455,5 @@
             </li>
         </ul>
     </nav>
-
 </body>
 </html>
