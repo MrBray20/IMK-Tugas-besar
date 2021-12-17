@@ -1,22 +1,22 @@
 @font-face {
 	font-family: 'montserrat';
 	src: url(../font/Montserrat-Medium.ttf);
-  }
-  body{
-	  font-family: 'montserrat';
-  }
+}
+body{
+	font-family: 'montserrat';
+}
   
-  .bg-image-vertical {
+.bg-image-vertical {
 	position: relative;
 	overflow: hidden;
 	background-repeat: no-repeat;
 	background-position: right center;
 	background-size: auto 100%;
-  }
+}
   
-  .btr{
-	  border-bottom: 1px solid rgb(185, 185, 185);
-  }
+.btr{
+	border-bottom: 1px solid rgb(185, 185, 185);
+}
   
   @media (min-width: 1025px) {
 	  .h-custom-2 {
