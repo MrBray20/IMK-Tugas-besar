@@ -23,6 +23,22 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous">
     </script>
+    <script>
+        $(document).ready(function () {
+            setInterval(function () {
+                var hours = new Date().getHours();
+                $(".hours").html((hours < 10 ? "0" : "") + hours);
+            }, 1000);
+            setInterval(function () {
+                var minutes = new Date().getMinutes();
+                $(".min").html((minutes < 10 ? "0" : "") + minutes);
+            }, 1000);
+            setInterval(function () {
+                var seconds = new Date().getSeconds();
+                $(".sec").html((seconds < 10 ? "0" : "") + seconds);
+            }, 1000);
+        });
+    </script>
     <title>Home</title>
 </head>
 <body>
@@ -56,12 +72,12 @@
     </nav>
 
     <!-- Jumbotron -->
+
     <div class="p-5 text-center" style="color: black;">
         <h1 class="mb-3"><b>Welcome!</b></h1>
         <h4 class="mb-3">Online payment for book shopping</h4>
         <a class="btn btn-primary" href="#breadcrumb" role="button">Explore All</a>
     </div>
-    <!-- Jumbotron -->
     </header>
 
     <!-- Search Bar-->
@@ -93,6 +109,23 @@
     </nav>
     <hr size="3px" style="margin-left: 49px; margin-right: 49px;">
 
+    <!-- Clock -->
+
+    <div class="clock fixed-bottom justify-content-end">
+        <div class="d-flex flex-wrap justify-content-around">
+            <div class="card bg-primary text-white">
+                <h3 class="card-title text-center">
+                    <div class="d-flex flex-wrap justify-content-center mt-2">
+                        <a><span class="badge hours"></span></a> :
+                        <a><span class="badge min"></span></a> :
+                        <a><span class="badge sec"></span></a>
+                    </div>
+                </h3>
+            </div>
+        </div>
+    </div>
+    
+
     <!-- Sidebar Filter-->
     <p style="margin-left: 68px; position: relative; color: black;">Filter</p>
     <div class="dropdown" style="position: absolute;">
@@ -101,7 +134,7 @@
             Rating
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">by title</a>
+            <a class="dropdown-item" href="#">by name</a>
             <a class="dropdown-item" href="#">by writer</a>
         </div>
     </div>
