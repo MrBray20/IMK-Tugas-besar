@@ -93,3 +93,12 @@ section{
     
     margin-top: -450px;
 }
+
+img{
+    float: left;
+}
+
+.logo{
+    width: 50px;
+    margin-left: 20px;
+}
