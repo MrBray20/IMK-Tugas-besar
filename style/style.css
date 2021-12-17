@@ -1,87 +1,96 @@
 @font-face {
-  font-family: 'montserrat';
-  src: url(../font/Montserrat-Medium.ttf);
-}
-body{
 	font-family: 'montserrat';
-}
+	src: url(../font/Montserrat-Medium.ttf);
+  }
+  body{
+	  font-family: 'montserrat';
+  }
+  
+  .bg-image-vertical {
+	position: relative;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: auto 100%;
+  }
+  
+  .btr{
+	  border-bottom: 1px solid rgb(185, 185, 185);
+  }
+  
+  @media (min-width: 1025px) {
+	  .h-custom-2 {
+	  height: 80%;
+	  }
+  }
+  
+  .gambar{
+	  height: 500px;
+	  background-color: #000000;
+	  z-index: 999;
+	  width: 100px;
+	  margin-left: -100px;
+  }
+  
+  ol, ul {
+	  list-style: none;
+  }
+  blockquote, q {
+	  quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+	  content: '';
+	  content: none;
+  }
+  table {
+	  border-collapse: collapse;
+	  border-spacing: 0;
+  }
+  img{
+	  float: left;
+  }
+  
+  .logo{
+	  width: 50px;
+	  margin-left: 20px;
+  }
+  
+  .john{
+	  margin-top: 50px;
+	  margin-left: 100px;
+	  
+  }
+  .cari{
+	  margin-left: 300px;
+	  margin-top: -40px;
+	  width: 600px !important;
+  }
+  .chart{
+	  margin-left: 100px;
+	  margin-top: 20px;
+	  font-size: 13px;
+  }
+  .my-4{
+	  width: 1050px;
+	  margin-left: 100px;
+  }
+  .keranjang{
+	  background-color: white;
+  }
+  .table{
+	  margin-left: 34px;
+	  box-sizing: inherit;
+  }
 
-.bg-image-vertical {
-  position: relative;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: auto 100%;
-}
-
-.btr{
-	border-bottom: 1px solid rgb(185, 185, 185);
-}
-
-@media (min-width: 1025px) {
-	.h-custom-2 {
-    height: 80%;
-	}
-}
-
-.gambar{
-	height: 500px;
-	background-color: #000000;
-	z-index: 999;
-	width: 100px;
-	margin-left: -100px;
-}
-
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-img{
-	float: left;
-}
-
-
-.john{
-	margin-top: 50px;
-	margin-left: 100px;
-	
-}
-.cari{
-	margin-left: 300px;
-	margin-top: -40px;
-	width: 600px !important;
-}
-.chart{
-	margin-left: 100px;
-	margin-top: 20px;
-	font-size: 13px;
-}
-.my-4{
-	width: 1050px;
-	margin-left: 100px;
-}
-.keranjang{
-	background-color: white;
-}
-.table{
-	margin-left: 34px;
-	box-sizing: inherit;
-}
-
-.carticon{
-	color: #000000;
-}
+  .nocart{
+	  width: 300px;
+	  margin-left: 300px;
+  }
+  
+  .carticon{
+	  color: #000000;
+  }
 
 .card-body {
     -ms-flex: 1 1 auto;
@@ -117,7 +126,7 @@ a {
     text-decoration: none !important
 }
 
-.cart {
+.card {
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -188,8 +197,4 @@ a {
 
 .btn-apply {
     font-size: 11px
-}
-
-.card-body{
-	width: max-content;
 }
