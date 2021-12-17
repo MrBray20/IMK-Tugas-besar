@@ -13,6 +13,21 @@
     <link rel="shortcut icon" href="../Img/iconweb.png">
     <script src="../js/mdb.min.js"></script>
     <script src="../js/scrip.js"></script>
+    <script src=
+    "https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+                    integrity=
+    "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+                    crossorigin="anonymous"></script>
+            <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                    integrity=
+    "sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+                    crossorigin="anonymous"></script>
+            <script src=
+    "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+                    integrity=
+    "sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+                    crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
 <body>
@@ -47,6 +62,7 @@
     <!-- Navbar -->
 
     <!-- Sidebar Filter-->
+    
     
 
     <!-- Jumbotron -->
@@ -104,10 +120,49 @@
                 <div class="col-lg-2 col-md-12 mb-4">
                     <div class="card">
                         <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                            <img src="../Img/cover1.jpg" class="img-fluid card-img-top">
-                            <a href="#!">
-                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                            </a>
+                            <img src="../Img/cover1.jpg" class="img-fluid card-img-top" type="button" 
+                            class="btn btn-primary" 
+                            data-toggle="modal" 
+                            data-target="#exampleModal">
+                
+                        <!--Bootstrap modal -->
+                        <div class="modal fade" 
+                            id="exampleModal"
+                            tabindex="-1" 
+                            role="dialog"
+                            aria-labelledby="exampleModalLabel" 
+                            aria-hidden="true">
+                            <div class="modal-dialog" 
+                                role="document">
+                                <div class="modal-content">
+                                    <!-- Modal heading -->
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" 
+                                            id="exampleModalLabel" style="color: black;">
+                                        Detail
+                                    </h5>
+                                        <button type="button" 
+                                                class="close"
+                                                data-dismiss="modal" 
+                                                aria-label="Close">
+                                            <span aria-hidden="true">
+                                            ×
+                                        </span>
+                                        </button>
+                                    </div>
+                
+                                    <!-- Modal body with image -->
+                                    <div class="modal-body">
+                                        <img src="../Img/cover1.jpg" width="100px">
+                                        <p style="margin-left: 110px; color: black; font-size: 1.5rem;">Title: The Hobbit</p>
+                                        <p style="margin-left: 110px; color: black; font-size: 1rem; margin-top: -12px;">Writer: J.R.R. Tolkien</p>
+                                        <p style="margin-left: 110px; color: black; font-size: 1rem; margin-top: -12px;">ISBN: 978-0-8020-9086-7</p>
+                                        <p style="margin-left: 110px; color: black; font-size: 1rem;">Synopsis</p>
+                                        <p style="margin-left: 110px; color: black; font-size: 0.6rem; margin-top: -10px;">Bilbo Baggins lives a quiet, peaceful life in his comfortable hole at Bag End. Bilbo lives in a hole because he is a hobbit—one of a race of small, plump people about half the size of humans, with furry toes and a great love of good food and drink. Bilbo is quite content at Bag End, near the bustling hobbit village of Hobbiton, but one day his comfort is shattered by the arrival of the old wizard Gandalf, who persuades Bilbo to set out on an adventure with a group of thirteen militant dwarves. The dwarves are embarking on a great quest to reclaim their treasure from the marauding dragon Smaug, and Bilbo is to act as their “burglar.” The dwarves are very skeptical about Gandalf’s choice for a burglar, and Bilbo is terrified to leave his comfortable life to seek adventure. But Gandalf assures both Bilbo and the dwarves that there is more to the little hobbit than meets the eye.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         </div>
                         <div class="card-body" style="color: black;">
                         <h5 class="card-title">The Hobbit</h5>
@@ -360,6 +415,5 @@
             </li>
         </ul>
     </nav>
-
 </body>
 </html>
