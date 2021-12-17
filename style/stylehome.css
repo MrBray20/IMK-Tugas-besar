@@ -16,6 +16,12 @@ ol, ul {
 
 .carticon{
     color: #000000;
+    margin-top: -52px;
+    margin-left: 1228px;
+    position: relative;
+}
+a.carticon{
+    margin-left: 0px;
 }
 
 img{
@@ -85,3 +91,14 @@ img{
   .dropdown:hover .dropbtn {
     background-color: #3e8e41;
   }
+
+  .btr{
+	border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.searchbar{
+    margin: auto;
+    padding-top: auto;
+    margin-left: auto;
+    text-align: center;
+}
