@@ -1,8 +1,3 @@
-@font-face {
-	font-family: 'montserrat';
-	src: url(../font/Montserrat-Medium.ttf);
-}
-
 *,
 *::before,
 *::after{
@@ -92,8 +87,8 @@ section{
     position: absolute;
     
     margin-top: -450px;
+    
 }
-
 img{
     float: left;
 }
@@ -101,4 +96,9 @@ img{
 .logo{
     width: 50px;
     margin-left: 20px;
+}
+.breadcrumb{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: -200px;
 }

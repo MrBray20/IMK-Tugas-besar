@@ -17,13 +17,48 @@
     <script src="../js/scrip.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-light" style="background-color: #5C87FE;">
-        <button>home</button>
-    </nav>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg" style="background-color: #1975FF;">
+            <div class="container-fluid">
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarRightAlignExample"
+                    aria-controls="navbarRightAlignExample"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+            <i class="fas fa-bars"></i>
+            </button>
+            <img src="../Img/iconweb.png" class="logo" alt="">
+            <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-5">
+                    <li class="nav-item">
+                        <a class="nav-link mx-4" aria-current="page" href="Katalog.html" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item grid-manual">
+                        <a class="nav-link" href="FAQ.html" style="color: white;">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+        </header>
     <section>
         <div class="judul">
             <h2>FREQUENTLY ASKED QUESTIONS (FAQs)</h2>
         </div>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+          </nav>
+          <hr class="my-4">
 
         <div class="container">
             <div class="accordion">
@@ -40,14 +75,6 @@
                         </p>
                     </div>
                 </div>
-
-                <nav aria-label="breadcrumb">
-                    <ul class="chart breadcrumb">
-                      <li class="breadcrumb-item"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Chart</li>
-                    </ul>
-                  </nav>
-                  <hr class="my-4">
 
                 <div class="accordion-item" id="pertanyaan2">
                     <a class= "accordion-link" href="#pertanyaan2">
