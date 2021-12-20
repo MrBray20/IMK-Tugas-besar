@@ -253,7 +253,6 @@ h2 {
   position: relative;
 }
 .set_quantity::after {
-  content: "(1 piece)";
   width: auto;
   height: auto;
   text-align: center;
@@ -298,13 +297,14 @@ h2 {
 .kosong{
     margin-top: 90px;
     width: 400px;
-    margin-left: 135px;
+    margin-left: 300px;
 }
 .sorry{
     margin-top: 360px;
-    margin-left: 220px
+    margin-left: 380px
 }
 .logo{
   width: 140px;
   margin-left: 40px;
 }
+
