@@ -1,4 +1,3 @@
-
 function checkForm(){
   const username = document.getElementById("email").value;
   const password = document.getElementById("password").value;
