@@ -1,175 +1,41 @@
 @font-face {
-	font-family: 'montserrat';
-	src: url(../font/Montserrat-Medium.ttf);
+  font-family: "montserrat";
+  src: url(../font/Montserrat-Medium.ttf);
 }
-body{
-	font-family: 'montserrat';
-}
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 6vh;
-    background-color: #5C87FE;
-}
-.logo{
-    width: 140px;
-    margin-right: 605px;
-}
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 10%;
-    background-color: transparent;
-    font-family: "montserrat";
-    font-size: 20px;
-}
-*,
-*::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-html{
-    font-family: 'montserrat';
-    font-size: 10px;
-    box-sizing: border-box;
-}
-section{
-    width: 100;
-    height: 100vh;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.container{
-    width: 150%;
-    max-width: 115rem;
-    margin-top: 100px;
-    padding: 0 1rem;
-}
-.accordion-item{
-    background-color: #5C87FE;
-    border-radius: .6rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    box-shadow: .5rem 2px .5rem rgb(0,0,0,.1);
-}
-.accordion-link{
-    font-size: 2.0rem;
-    color: #fff;
-    text-decoration: none;
-    background-color: #5C87FE;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 0;
-}
-.accordion-link i{
-    color: #fff;
-    padding: .5rem;
-
-}
-.accordion-link .ion-md-remove{
-    display: none;
-}
-.jawaban{
-    max-height: 0;
-    overflow: hidden;
-    position: relative;
-    background-color:#94aef7;
-    transition: max-height 650ms;
-}
-.jawaban::before{
-    content: "";
-    position: absolute;
-    width: .6rem;
-    height: 90%;
-    background-color: #FECE2F;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    
-}
-.jawaban p{
-    color: white;
-    font-size: 1.8rem;
-    padding: 2rem;
-}
-.accordion-item:target .jawaban{
-    max-height: 20rem;
-}
-.accordion-item:target .accordion-link .ion-md-add{
-    display: none;
-}
-.accordion-item:target .accordion-link .ion-md-remove{
-    display: block;
-}
-.judul{
-    color: #5C87FE;
-    position: absolute;
-    font-size: 30px;
-    margin-top: -500px;
-    
-}
-img{
-    float: left;
+body {
+  font-family: "montserrat";
+  background-color: white;
+  color: black;
 }
 
-.logo{
-    width: 140px;
-    margin-left: -124px;
+ol,
+ul {
+  list-style: none;
 }
-.breadcrumb{
-    position: absolute;
-    margin-left: 100px;
-    margin-top: -200px;
-}
-.nav-links li a {
-    text-decoration: none;
-    list-style: none;
-}
-li {
-    list-style-type:none;}
 
-.hom{
-    margin-left: 520px;
-    font-size: 17px;
+.card-body {
+  width: max-content;
 }
-.abt{
-    margin-left: 37px;
-    font-size: 17px;
-}
-ul.breadcrumb {
-    padding: 10px 16px;
-    list-style: none;
-    background-color: transparent;
-    margin-top: -690px;
-}
-  ul.breadcrumb li {
-    display: inline;
-    font-size: 18px;
-}
-  ul.breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
-}
-  ul.breadcrumb li a {
-    color: #5C87FE;
-    text-decoration: none;
-}
-  ul.breadcrumb li a:hover {
-    color: #5C87FE;
-    text-decoration: underline;
-}
-hr.hor{
-    margin-top: -640px;
-    width: 1800px;
-    margin-left: 100px;
-    
 
+.carticon {
+  color: #000000;
+  margin-top: -52px;
+  margin-left: 1228px;
+  position: relative;
+}
+a.carticon {
+  margin-left: 0px;
+}
+
+img {
+  float: left;
+}
+
+.logo {
+  width: 140px;
+  margin-left: 40px;
+}
+
+.modal-body {
+  width: auto;
 }
