@@ -5,13 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../lib/font-awesome.min.css">
-  	<link rel="stylesheet" href="../lib/font-awesome.css">
+    <link rel="stylesheet" href="../lib/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="../style/styleFaq.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="../lib/mdb.min.css"> -->
+    <link rel="stylesheet" href="../lib/mdb.min.css">
+    <link rel="shortcut icon" href="../Img/iconweb3.png">
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
-    <!-- <script src="../js/mdb.min.js"></script> -->
+    <script src="../js/mdb.min.js"></script>
+    <!-- <script src="../js/bootstrap.js"></script> -->
+    <!-- <script src="../js/bootstrap.min.js"></script> -->
+    <!-- <script src="../js/bootstrap.bundle.js"></script> -->
+    <script src="../js/bootstrap.js"></script>
+    
     <!-- <script src="../js/script.js"></script> -->
     
 
@@ -19,78 +25,138 @@
 </head>
 <body>
     <!-- Navbar -->
-  <nav>
-      <div class="logo">
-        <img src="../Img/iconweb2.png" class="logo" alt="">
-      </div>
-      <ul class="nav-links">
-          <li>
-              <a class="hom" href="Katalog.html" style="color: white;">Home</a>
-          </li>
-          <li>
-            <a class="abt" href="About.html" style="color: white;">About</a>
-        </li>
-      </ul>
-  </nav>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarRightAlignExample"
+                    aria-controls="navbarRightAlignExample"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+            <i class="fas fa-bars"></i>
+            </button>
+            <img src="../Img/iconweb2.png" class="logo" alt="">
+            <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-5">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../Pages/About.html" style="color: white;">About</a>
+                    </li>
+                    <li class="nav-item grid-manual">
+                        <a class="nav-link mx-4" href="FAQ.html" style="color: white;">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
 
+        <!-- Breadcrumb -->
+
+        <nav aria-label="breadcrumb" id="breadcrumb" style="margin-top: 20px;">
+            <ol class="breadcrumb" style="margin-left: 66px; margin-bottom: -6px;">
+                <li class="breadcrumb-item active " aria-current="page" style="color: black;">You are here: <a href="../Pages/Katalog.html" style="color: black;">HOME</a></li>
+                <li class="breadcrumb-item active " aria-current="page" style="color: black;">About</li>
+            </ol>
+        </nav>
+    <hr size="3px" style="margin-left: 49px; margin-right: 49px; margin-bottom: 20px;">
     <!-- Isi FAQ (Pertanyaan dan Jawaban) -->
 <section>
-  <div class="judul">
-      <h2>FREQUENTLY ASKED QUESTIONS (FAQs)</h2>
-  </div>
+    <div class="judul" style="text-align: center; color: black;">
+        <h2>FREQUENTLY ASKED QUESTIONS (FAQs)</h2>
+    </div>
 
-  <div class="container">
-      <div class="accordion">
-          <div class="accordion-item" id="pertanyaan1">
-              <a class= "accordion-link" href="#pertanyaan1">
-                  Bisakah saya membeli buku secara langsung ?
-                  <i class="icon ion-md-add"></i>
-                  <i class="icon ion-md-remove"></i>
-              </a>
-              <div class="jawaban">
-                  <p>
-                      Tentu bisa. Kamu bisa langsung datang ke toko kami, yang berada di 
-                  jalan lemak nomor 3, Bandung.
-                  </p>
-              </div>
-          </div>
 
-          <div class="accordion-item" id="pertanyaan2">
-              <a class= "accordion-link" href="#pertanyaan2">
-                  Bagaimana saya mendapatkan informasi tentang promo menarik ?
-                  <i class="icon ion-md-add"></i>
-                  <i class="icon ion-md-remove"></i>
-              </a>
-              <div class="jawaban">
-                  <p>
-                      Kami akan menginformasikan promo-promo menarik melalui akun email
-                  yang kamu daftarkan. Jadi, sering-sering cek email ya !.
-                  </p>
-              </div>
-          </div>
-
-          <div class="accordion-item" id="pertanyaan3">
-              <a class= "accordion-link" href="#pertanyaan3">
-                  Ketika saya membeli buku secara online dan ternyata terdapat kecacatan
-                  pada buku tersebut, bisakah saya mengajukan return ?
-                  <i class="icon ion-md-add"></i>
-                  <i class="icon ion-md-remove"></i>
-              </a>
-              <div class="jawaban">
-                  <p>
-                      Tentu bisa. Kamu bisa langsung menginformasikan kecacatan buku tersebut
-                  maksimal 3 hari setelah pembelian. Jika melewati batas waktu, maka buku
-                  tersebut tidak dapat direturn.
-                  </p>
-              </div>
-          </div>
-      </div>
-  </div>
+    <div class="accordion mt-5 text-danger" style="padding: 200px;" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    Bisakah saya membeli buku secara langsung ?
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                <div class="accordion-body">
+                    Tentu bisa. Kamu bisa langsung datang ke toko kami, yang berada di jalan lemak nomor 3, Bandung.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    Bagaimana saya mendapatkan informasi tentang promo menarik ?
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                <div class="accordion-body">
+                    Kami akan menginformasikan promo-promo menarik melalui akun email yang kamu daftarkan. Jadi, sering-sering cek email ya !.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    Ketika saya membeli buku secara online dan ternyata terdapat kecacatan pada buku tersebut, bisakah saya mengajukan return ?
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                <div class="accordion-body">
+                    Tentu bisa. Kamu bisa langsung menginformasikan kecacatan buku tersebut maksimal 3 hari setelah pembelian. Jika melewati batas waktu, maka buku
+                            tersebut tidak dapat direturn.
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
 </section>
+<footer class="text-center text-white bg-primary" style="margin-top: 465px;">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- USA -->
+            <a class="btn btn-outline-light btn-floating m-1" href="Login-USA.html" role="button"><i class="flag flag flag-united-states mx-1" style="margin-top: 0.6rem;"></i></a>
+            
+            <!-- INA -->
+            <a class="btn btn-outline-light btn-floating m-1" href="Login-IND.html" role="button"><i class="flag flag-indonesia mx-1" style="margin-top: 0.6rem;"></i></a>
 
-<ul class="breadcrumb">
-  <li><a href="Katalog.html">Home</a></li>
-  <li><a href="#">FAQ</a></li>
-</ul>
-<hr class="hor">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i  class="fab fa-instagram"></i></a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #005fee">
+        © 2021 Copyright: JohnStore
+    </div>
+    <!-- Copyright -->
+</footer>
+
 </body>
+</html>
