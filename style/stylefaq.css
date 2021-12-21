@@ -1,3 +1,29 @@
+@font-face {
+	font-family: 'montserrat';
+	src: url(../font/Montserrat-Medium.ttf);
+}
+body{
+	font-family: 'montserrat';
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 9vh;
+    background-color: #5C87FE;
+}
+.logo{
+    width: 140px;
+    margin-left: -140px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+    background-color: transparent;
+    font-family: "montserrat";
+    font-size: 20px;
+}
 *,
 *::before,
 *::after{
@@ -21,7 +47,7 @@ section{
 .container{
     width: 100%;
     max-width: 80rem;
-    margin: 0 auto;
+    margin-top: 100px;
     padding: 0 1.5rem;
 }
 .accordion-item{
@@ -85,8 +111,8 @@ section{
 .judul{
     color: #5C87FE;
     position: absolute;
-    
-    margin-top: -450px;
+    font-size: 20px;
+    margin-top: -500px;
     
 }
 img{
@@ -94,11 +120,54 @@ img{
 }
 
 .logo{
-    width: 50px;
-    margin-left: 20px;
+    width: 140px;
+    margin-left: -124px;
 }
 .breadcrumb{
     position: absolute;
     margin-left: 100px;
     margin-top: -200px;
+}
+.nav-links li a {
+    text-decoration: none;
+    list-style: none;
+}
+li {
+    list-style-type:none;}
+
+.hom{
+    margin-left: 470px;
+}
+.abt{
+    margin-left: 25px;
+}
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: transparent;
+    margin-top: -530px;
+}
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+  ul.breadcrumb li a {
+    color: #5C87FE;
+    text-decoration: none;
+}
+  ul.breadcrumb li a:hover {
+    color: #5C87FE;
+    text-decoration: underline;
+}
+hr.hor{
+    margin-top: -490px;
+    width: 1100px;
+    margin-left: 100px;
+    
+
 }
