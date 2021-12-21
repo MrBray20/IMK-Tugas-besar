@@ -2,9 +2,6 @@
   font-family: "montserrat";
   src: url(../font/Montserrat-Medium.ttf);
 }
-body {
-  font-family: "montserrat";
-}
 
 .bg-image-vertical {
   position: relative;
@@ -201,7 +198,7 @@ a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Mulish", sans-serif;
+  font-family: "montserrat";
 }
 :root {
   --text-clr: #4f4f4f;
