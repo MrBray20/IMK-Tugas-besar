@@ -173,3 +173,40 @@ hr.hor{
     
 
 }
+.inner-footer{
+    margin-top: 650px;
+    padding: 0;
+    background-color: #3164f3;
+    height: 90px;
+}
+.social-links{
+    display: flex;
+}
+.social-links ul{
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-left: 800px;
+    size: 15px;
+}
+.social-items{
+  list-style: none;
+}
+.social-items a{
+    padding: 10px 20px;
+    font-size: 30px;
+    color: white;
+}
+.outer-footer{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: #275ae7;
+    height: 60px;
+    margin: auto;
+
+    
+}
