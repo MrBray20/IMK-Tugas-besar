@@ -225,7 +225,7 @@ h2 {
   border: none;
 }
 .product_img img {
-  min-width: 200px;
+  min-width: 120px;
   max-height: 200px;
 }
 .product_name {
