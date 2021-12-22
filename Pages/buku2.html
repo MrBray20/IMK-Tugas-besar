@@ -146,10 +146,38 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <!-- //remover move and price -->
+                                    <!-- remover move and price -->
                                     <div class="row">
                                         <div class="col-8 d-flex justify-content-between remove_wish">
-                                            <a href="../Pages/cartkosong.html" class="btn btn-primary text-uppercase" style="background-color: #FF6F00;">Remove</a>
+                                            <a class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#Remove" style="background-color: #FF6F00;">Remove</a>
+                                            <!--Bootstrap modal -->
+                                            <div class="modal fade" id="Remove" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                                aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <!-- Modal heading -->
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel" style="color: black;">
+                                                                Warning <i class="fas fa-exclamation-triangle" style="color: #FF6F00;"></i>
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">
+                                                                    ×
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        
+                                                        <!-- Modal body with image -->
+                                                        <div class="modal-body text-black">
+                                                            Are you sure want to remove this item?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <a class=" btn btn-primary" data-dismiss="modal" >No</a>
+                                                            <a href="cartkosong.html" style="background-color: #FF6F00;color: white;" class="btn ">Yes</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="col-4 d-flex justify-content-end price_money">
                                             <h3>$<span id="itemval">20.00 </span></h3>
@@ -223,24 +251,29 @@
                 
                 <!-- INA -->
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="flag flag-indonesia mx-1" style="margin-top: 0.6rem;"></i></a>
-
                 <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-    
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+                
                 <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-    
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"><i
+                        class="fab fa-twitter"></i></a>
+                
                 <!-- Google -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
-    
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/" role="button"><i
+                        class="fab fa-google"></i></a>
+                
                 <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i  class="fab fa-instagram"></i></a>
-    
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"><i
+                        class="fab fa-instagram"></i></a>
+                
                 <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
-    
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+                
                 <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/MrBray20/IMK-Tugas-besar" role="button"><i
+                        class="fab fa-github"></i></a>
             </section>
             <!-- Section: Social media -->
         </div>
@@ -248,7 +281,7 @@
     
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: #005fee">
-            © 2021 Hak cipta: JohnStore
+            © Copyright: JohnStore
         </div>
         <!-- Copyright -->
     </footer>
@@ -262,7 +295,11 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Status</h5>
-                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="close" data-mdb-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            ×
+                        </span>
+                    </button>
                 </div>
                 <div class="modal-body">Your transacation is success</div>
                 <div class="modal-footer">
