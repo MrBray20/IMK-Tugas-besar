@@ -307,3 +307,9 @@ h2 {
 }
 
 
+.clock{
+  display: block;
+  position: relative;
+  margin-left: 1640px;
+  height: 80px;
+}

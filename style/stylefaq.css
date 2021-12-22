@@ -76,3 +76,9 @@ img {
 
     
 }
+.clock{
+  display: block;
+  position: relative;
+  margin-left: 1640px;
+  height:150px;
+}
